@@ -1,0 +1,36 @@
+.img {
+    width: 100%;
+}
+
+.subContainer {
+    margin-top: 1em;
+    display: flex;
+}
+
+.titleContainer {
+    width: 50%;
+    line-height: 50px;
+    font-size: 2.4em;
+}
+
+.infoContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
+.button {
+    width: 140px;
+    padding: 1em;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(35, 77%, 62%);
+}

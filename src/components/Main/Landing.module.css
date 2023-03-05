@@ -1,0 +1,10 @@
+.newsLanding {
+    display: grid;
+    grid-template-columns: 4fr 1.7fr;
+    gap: 30px;
+    margin-bottom: 3em
+};
+
+.main {
+    width: 50%;
+}

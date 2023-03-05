@@ -1,0 +1,27 @@
+.itemContainer {
+    display: flex;
+}
+
+.image {
+    height: 120px;
+    margin-right: 1em;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 2em;
+}
+
+.h3 {
+    color: hsl(240, 100%, 5%);
+}
+
+.p {
+    color: hsl(236, 13%, 42%);
+}

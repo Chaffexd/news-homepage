@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+
+import Footer from './components/Footer/Footer';
+import Header from './components/Layout/Header';
+import Landing from './components/Main/Landing';
 import './App.css';
+import MobileHeader from './components/Layout/MobileHeader';
+import MobileMain from './components/Mobile/MobileMain';
 
 function App() {
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
+  const updateWidth = () => {
+    setDesktop(window.innerWidth > 1000);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth);
+    return() => {window.removeEventListener("resize", updateWidth)}
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isDesktop ? <Header /> : <MobileHeader />}
+      <main>
+        {isDesktop ? <Landing /> : <MobileMain />}
+      </main>
+      <Footer />
     </div>
   );
 }

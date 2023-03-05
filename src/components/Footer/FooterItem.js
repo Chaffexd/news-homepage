@@ -43,7 +43,7 @@ const FooterItem = () => {
     )
 
     return (
-        <div className={classes.itemContainer}>
+        <div className={classes.footerItemContainer}>
             {imageSource}
         </div>
     );

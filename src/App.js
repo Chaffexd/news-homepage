@@ -8,14 +8,14 @@ import MobileHeader from './components/Layout/MobileHeader';
 import MobileMain from './components/Mobile/MobileMain';
 
 function App() {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1150);
   const updateWidth = () => {
-    setDesktop(window.innerWidth > 1000);
+    setDesktop(window.innerWidth > 1150);
   };
   useEffect(() => {
     window.addEventListener("resize", updateWidth);
     return() => {window.removeEventListener("resize", updateWidth)}
-  });
+  }, [isDesktop]);
   return (
     <div className="App">
       {isDesktop ? <Header /> : <MobileHeader />}

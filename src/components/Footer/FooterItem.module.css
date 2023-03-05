@@ -25,3 +25,23 @@
 .p {
     color: hsl(236, 13%, 42%);
 }
+
+@media (min-width: 1150px) {
+    .footerItemContainer {
+        display: flex;
+    }
+}
+
+@media (max-width: 1150px) {
+    .itemContainer {
+        display: flex;
+        margin-bottom: 1em;
+    }
+    .footerItems {
+        display: flex;
+        justify-content: space-between;
+    }
+    .image {
+        height: 129px;
+    }
+}

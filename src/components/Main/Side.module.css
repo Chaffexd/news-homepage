@@ -16,3 +16,9 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 1150px) {
+    .sideComponent {
+        margin-bottom: 2.5em;
+    }
+}

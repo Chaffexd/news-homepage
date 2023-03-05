@@ -1,0 +1,21 @@
+.button {
+    width: 140px;
+    padding: 1em;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.button:hover {
+    background-color: hsl(35, 77%, 62%);
+}
+
+.header {
+    margin-bottom: .5em;
+}
+
+.paragraph {
+    margin-bottom: 1em;
+}

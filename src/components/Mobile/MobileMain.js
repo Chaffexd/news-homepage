@@ -1,5 +1,6 @@
 import React from 'react';
 import mobilePhoto from '../../assets/images/image-web-3-mobile.jpg';
+import Side from '../Main/Side';
 import MobileLanding from './MobileLanding';
 
 import classes from './MobileMain.module.css';
@@ -13,6 +14,8 @@ const MobileMain = () => {
             paragraph="We dive into the next evolution of the web that claims to put power of the platforms
             back into the hands of the people. But is it really fulfilling it's promise?"
         />
+        <Side />
+        
     </div>
   )
 };

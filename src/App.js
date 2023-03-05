@@ -8,6 +8,9 @@ import MobileHeader from './components/Layout/MobileHeader';
 import MobileMain from './components/Mobile/MobileMain';
 
 function App() {
+  // Here we are using useState to determine the window width and render a diff
+  // component based on that
+  // remember: first var is default state, function is new state
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1150);
   const updateWidth = () => {
     setDesktop(window.innerWidth > 1150);

@@ -3,7 +3,8 @@
 }
 
 .image {
-    height: 120px;
+    height: 100%;
+    width: 95px;
     margin-right: 1em;
 }
 
@@ -29,6 +30,7 @@
 @media (min-width: 1150px) {
     .footerItemContainer {
         display: flex;
+        gap: 68px;
     }
 }
 

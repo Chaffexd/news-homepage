@@ -8,3 +8,26 @@
 .burger {
     float: right;
 }
+
+.open {
+    width: 13.5em;
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    height: 40%;
+    background: hsl(35, 77%, 62%);
+    opacity: 0.9;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.open li {
+    margin-left: 1em;
+    padding-bottom: 1em;
+}
+
+.open li:hover {
+    text-decoration: underline;
+}

@@ -36,7 +36,7 @@ function App() {
       {showModal && <Modal onHideModal={hideModalHandler} />}
       {isDesktop ? <Header /> : <MobileHeader />}
       <main>
-        {isDesktop ? <Landing onClick={showModalHandler} /> : <MobileMain />}
+        {isDesktop ? <Landing onClick={showModalHandler} /> : <MobileMain onClick={showModalHandler} />}
       </main>
       <Footer />
     </div>

@@ -7,7 +7,7 @@ const MobileLanding = (props) => {
     <div>
         <h1 className={classes.header}>{props.title}</h1>
         <p className={classes.paragraph}>{props.paragraph}</p>
-        <button className={classes.button}>READ MORE</button>
+        <button className={classes.button} onClick={props.onClick}>READ MORE</button>
     </div>
   )
 };

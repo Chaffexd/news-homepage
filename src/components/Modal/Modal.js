@@ -13,8 +13,8 @@ const ModalOverlay = (props) => {
     return(
         <div className={classes.modal}>
             <div className={classes.content}>
-                <p>example text</p>
-                <button onClick={props.onHideModal}>Close</button>
+                <p>There is nothing more to read at the moment, I just wanted to play with portals.</p>
+                <button className={classes.button} onClick={props.onHideModal}>Close</button>
             </div>
         </div>
     )
